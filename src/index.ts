@@ -19,8 +19,6 @@ io.on("connection", async (socket) => {
   registerRoomHandlers(io, socket)
 })
 
-io.emit("hello", "everyone");
-
 server.listen(port, () => {
   console.log(`server running at http://localhost:${port}`);
 });
